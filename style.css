@@ -54,6 +54,8 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 100px;
+  margin-top: 1.5rem;
 }
 
 h1 {
@@ -153,6 +155,10 @@ aside .sidebar:hover{
     box-shadow: none;
 }
 
+li{
+  list-style: none;
+}
+
 aside .sidebar a{
     display: flex;
     align-items: center;
@@ -167,12 +173,6 @@ aside .sidebar a{
 aside.sidebar a span{
     font-size: 1.6rem;
     transform: all 0.3s ease;
-}
-
-aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
 }
 
 aside .sidebar a.active{
@@ -210,3 +210,20 @@ aside .sidebar .message-count{
     border-radius: var(--border-radius-1);
 }
 
+main{
+  margin-top: 1.4rem;
+}
+
+main .sobre{
+  margin-top: 1.3rem;
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  cursor: pointer;
+  transition: all o.3s ease;
+}
