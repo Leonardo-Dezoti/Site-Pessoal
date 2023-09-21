@@ -1,22 +1,9 @@
-<style>
-    .main{
-        margin-top: 1.3rem;
-        background-color: var(--color-white);
-        padding: var(--card-padding);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--box-shadow);
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 1.4rem;
-        transition: all o.3s ease;
-    }
-
-    .main .familia{
+<style>    
+    .content{
         margin-top: 1.3rem;
     }
 
-    main .familia .persons{
+    .content .familia{
         background-color: var(--color-white);
         padding: var(--card-padding);
         border-radius: var(--card-border-radius);
@@ -30,15 +17,29 @@
         transition: all 0.3s ease;
     }
 
-    .main .familia .persons:hover{
+    .content .familia:hover{
         box-shadow: none;
+    }
+
+    .content .familia .persons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img{
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 0.4rem;
+        border-radius: 20%;
     }
 
 </style>
 
 <h1>Familia</h1>
 
-<div class="main">
+<div class="content">
     <div class="familia">
         <div class="persons">
             <img src="imgs/familia/mae.jpg"></img>
@@ -47,10 +48,6 @@
         <div class="persons">
             <img src="imgs/familia/pai.jpg"></img>
             <h2>Pai</h2>
-        </div>
-        <div class="persons">
-            <img src=""></img>
-            <h2>Mãe</h2>
         </div>
     </div>
 </div>
