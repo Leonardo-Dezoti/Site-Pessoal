@@ -1,1 +1,56 @@
+<style> 
+    .content{
+        margin-top: 1.3rem;
+    }
+
+    .content .namoro{
+        background-color: var(--color-white);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        margin-top: 1rem;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1.4rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .content .namoro:hover{
+        box-shadow: none;
+    }
+
+    .content .namoro .persons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img{
+        width: 23rem;
+        height: 23rem;
+        margin-bottom: 0.4rem;
+        border-radius: 20%;
+    }
+
+</style>
+
 <h1>Namoro</h1>
+
+<h3>Aqui contem algumas fotos com minha namorada</h3>
+
+<div class="content">
+    <div class="namoro">
+        <div class="photos">
+            <img src="imgs/namoro/1.jpg"></img>
+        </div>
+        <div class="photos">
+            <img src="imgs/namoro/2.jpg"></img>
+        </div>
+        <div class="photos">
+            <img src="imgs/namoro/3.jpg"></img>
+        </div>
+    </div>
+</div>
