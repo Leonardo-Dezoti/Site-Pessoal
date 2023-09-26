@@ -19,4 +19,27 @@ function loadSection(sectionName) {
         .catch(error => {
             console.error('Erro ao carregar a seção:', error);
         });
+
+    // Atualiza a imagem da div 'logo' de acordo com a seção ativa
+    const logo = document.querySelector('.logo img');
+    switch (sectionName) {
+        case 'sobre':
+            logo.src = 'imgs/perfilPessoal.jpg';
+            break;
+        case 'galeria':
+            logo.src = 'imgs/perfilPessoal.jpg';
+            break;
+        case 'familia':
+            logo.src = 'imgs/perfilPessoal.jpg';
+            break;
+        case 'namoro':
+            logo.src = 'imgs/perfilPessoal.jpg';
+            break;
+        case 'conhecimento':
+            logo.src = 'imgs/perfilProfissional.jpg';
+            break;
+        case 'experiencia':
+            logo.src = 'imgs/perfilProfissional.jpg';
+            break;
+    }
 }

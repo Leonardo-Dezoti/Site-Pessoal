@@ -1,3 +1,76 @@
+<style>
+  .content {
+    margin-top: 1.3rem;
+    font-size: 100px;
+  }
+
+  .content .sobre {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .content .sobre:hover {
+    box-shadow: none;
+  }
+
+  .content .sobre .hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20%;
+  }
+
+  .descricao{
+    text-align: center;
+  }
+</style>
+
 <h1>Sobre</h1>
 
-<h3>Aqui irei falar um pouco mais sobre minha vida pessoal para que possam me conhecer</h3>
+<h3>
+  Aqui irei falar um pouco mais sobre minha vida pessoal para que possam me
+  conhecer
+</h3>
+
+<div class="content">
+  <div class="sobre">
+    <div>
+      <h2>
+        Meu nome é Leonardo Rodrigues Dezoti Ferraz, eu tenho atualmente 20
+        anos, nasci em 2003 na cidade de Itapira/SP no qual eu ainda vivo.
+      </h2>
+      <h2 id="hobbie">Os meus principais hobbies são:</h2>
+    </div>
+    <div id="hobbies">
+      <img src="imgs/hobbies/sports.jpeg" />
+      <h3 class="descricao">Praticar esportes</h3>
+    </div>
+    <div id="hobbies">
+      <img src="imgs/hobbies/lift.jpeg" />
+      <h3 class="descricao">Praticar musculação</h3>
+    </div>
+    <div id="hobbies">
+      <img src="imgs/hobbies/games.jpeg" />
+      <h3 class="descricao">Praticar esportes</h3>
+    </div>
+    <div id="hobbies">
+      <img src="imgs/hobbies/games.jpeg" />
+      <h3 class="descricao">Praticar esportes</h3>
+    </div>
+  </div>
+</div>
