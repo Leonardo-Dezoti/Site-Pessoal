@@ -226,7 +226,7 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .container{
       width: 95%;
       grid-template-columns: 7rem auto 23rem;
@@ -245,6 +245,10 @@ main {
   }
 
   .logo{
+    display: none;
+  }
+
+  .right-section{
     display: none;
   }
 
@@ -332,6 +336,7 @@ main {
   }
 
   .right-section {
+    display: block;
     width: 94%;
     margin: 0 auto 4rem;
   }
@@ -362,4 +367,5 @@ main {
   .right-section .nav button span {
     font-size: 2rem;
   }
+
 }
