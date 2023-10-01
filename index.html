@@ -2,10 +2,10 @@
 <html lang="pt">
 
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <title>Leonardo Dezoti - Pessoal e Profissional</title>
 </head>
 
@@ -17,51 +17,40 @@
         <div class="logo">
           <img src="" />
         </div>
+        <div class="close" id="close-btn">
+          <span class="material-symbols-outlined">close</span>
+      </div>
       </div>
       <div class="sidebar">
-            <a href="#" class="no-format">
-              <span class="material-symbols-outlined"> dashboard </span>
-              <h3>Dashboard</h3>
-            </a> 
-        <ul>
-          <li>
-            <a href="#" class="secao-link"onclick="loadSection('sobre')">
-              <span class="material-symbols-outlined">menu_book</span>
-              <h3>Sobre</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="secao-link" onclick="loadSection('galeria')">
-              <span class="material-symbols-outlined"> image </span>
-              <h3>Galeria</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="secao-link" onclick="loadSection('familia')">
-              <span class="material-symbols-outlined"> family_history </span>
-              <h3>Familia</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="secao-link" onclick="loadSection('namoro')">
-              <span class="material-symbols-outlined"> favorite </span>
-              <h3>Namoro</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="secao-link"onclick="loadSection('conhecimento')">
-              <span class="material-symbols-outlined">school</span>
-              <h3>Conhecimentos</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="secao-link" onclick="loadSection('experiencia')">
-              <span class="material-symbols-outlined">work</span>
-              <h3>Experiências</h3>
-            </a>
-          </li>
-          </li>
-        </ul>
+        <a href="#" id="close-btn">
+          <span class="material-symbols-outlined"> dashboard </span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="#" class="secao-link" onclick="loadSection('sobre')">
+          <span class="material-symbols-outlined">menu_book</span>
+          <h3>Sobre</h3>
+        </a>
+
+        <a href="#" class="secao-link" onclick="loadSection('galeria')">
+          <span class="material-symbols-outlined"> image </span>
+          <h3>Galeria</h3>
+        </a>
+        <a href="#" class="secao-link" onclick="loadSection('familia')">
+          <span class="material-symbols-outlined"> family_history </span>
+          <h3>Familia</h3>
+        </a>
+        <a href="#" class="secao-link" onclick="loadSection('namoro')">
+          <span class="material-symbols-outlined"> favorite </span>
+          <h3>Namoro</h3>
+        </a>
+        <a href="#" class="secao-link" onclick="loadSection('conhecimento')">
+          <span class="material-symbols-outlined">school</span>
+          <h3>Conhecimentos</h3>
+        </a>
+        <a href="#" class="secao-link" onclick="loadSection('experiencia')">
+          <span class="material-symbols-outlined">work</span>
+          <h3>Experiências</h3>
+        </a>
       </div>
     </aside>
     <!--Sidebar Section End-->
@@ -70,8 +59,21 @@
     <main id="content">
       <script src="secoes.js"></script>
     </main>
-  </div>
-  <script src="index.js"></script>
+
+    <!-- Main Content End-->
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="nav">
+        <button id="menu-btn">
+          <span class="material-symbols-outlined"> dashboard </span>
+        </button>
+        <h1>Leonardo Dezoti</h1>
+      </div>
+      <!-- End of Nav -->
+
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
